@@ -13,10 +13,10 @@ The goal is to prepare tidy data that can be used for later analysis.
 ### Tidy data set
 The general principle for a [tidy data set](http://vita.had.co.nz/papers/tidy-data.pdf) are:
 
-..* Each variable you measure should be in one column
-..* Each different observation of that variable should be in a different row
-..* There should be one table for each "kind" of variable
-..* If there are multiple tables, they should include a column in the table that allows them to be linked
+* Each variable you measure should be in one column
+* Each different observation of that variable should be in a different row
+* There should be one table for each "kind" of variable
+* If there are multiple tables, they should include a column in the table that allows them to be linked
 
 Once the process is followed to turn raw data into actionable information, at the end of the day you will get data ready for further analysis.
 The final product of this project is called **TidySamsungData.txt**. This file can be found in this repo.
