@@ -11,15 +11,20 @@ Here are the data for the project:
 ## Tidy Data
 The tidy data called **TidySamsungData.txt** in this repo was obtained by following the process as indicated in **run_analysis.R**
 The variables used to create the tidy data set from the original data are:
+
 * Subject: Corresponding to the 30 volunteers coded as integer value.
+
 * Activity: Class labels with 6 levels coded as integer values.
+
 1. WALKING
 2. WALKING_UPSTAIRS
 3. WALKING_DOWNSTAIRS
 4. SITTING
 5. STANDING
 6. LAYING
-* The estimated mean value, _mean()_**, and standard deviation, _std()_** of the body linear acceleration _tBodyAcc-XYZ_** coded as real values.
+
+* The estimated mean value, _mean()_, and standard deviation, _std()_ of the body linear acceleration _tBodyAcc-XYZ_ coded as real values.
+
 1. tBodyAcc-mean()-X
 2. tBodyAcc-mean()-Y
 3. tBodyAcc-mean()-Z
@@ -28,8 +33,10 @@ The variables used to create the tidy data set from the original data are:
 6. tBodyAcc-std()-Z
 
 The new variables created to accomplish the task are:
+
 * SubjectNo which corresponds to the Subject in the original data set but in R has been coded as a factor variable with 30 levels.
 * Activity has been coded with descriptive activity names rather than the integer numbers as required in the project with six levels:
+
 1. walking
 2. walkingUpstairs
 3. walkingDownstairs
@@ -38,7 +45,9 @@ The new variables created to accomplish the task are:
 6. laying
 
 To recode the variables from the *revalue* function was used from the *plyr* library.
-* The average values of the estimated mean and std of the body acceleration (real numbers) have been obtained using *ddply* from the *plyr* library as well:
+
+* The average values of the estimated mean and std of the body acceleration (real numbers) have been obtained using **ddply** from the **plyr** library as well:
+
 1. ave_tBodyAcc_mean_X
 2. ave_tBodyAcc_mean_Y
 3. ave_tBodyAcc_mean_Z
